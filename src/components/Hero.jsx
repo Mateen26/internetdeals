@@ -11,7 +11,7 @@ export default function Hero() {
             Your Destination for Seamless Connectivity and Unmatched Entertainment!
           </h1>
           <p className="mt-6 text-lg text-primary-100 sm:text-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Unleash the full potential of your home with internetcabletvpromo.com, where cutting-edge technology meets unbeatable entertainment. Elevate your digital lifestyle with our high-speed internet and premium cable TV services.
+            Unleash the full potential of your home with internetdealz.com, where cutting-edge technology meets unbeatable entertainment. Elevate your digital lifestyle with our high-speed internet and premium cable TV services.
           </p>
           <div className="mt-10">
             <a
