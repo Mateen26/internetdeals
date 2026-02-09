@@ -7,10 +7,7 @@ export default function HomePhoneSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <span className="rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium">
-              SPECT-INTERNET VOICE®
-            </span>
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+            <h2 className="text-3xl font-bold sm:text-4xl">
               Stay Connected with a Smart, Secure Home Phone
             </h2>
             <p className="mt-6 text-primary-100">
@@ -38,7 +35,7 @@ export default function HomePhoneSection() {
               * Limited-time offer. Terms and conditions may apply.
             </p>
           </div>
-          <div className="hidden lg:block rounded-2xl bg-surface-800/30 h-64 flex items-center justify-center">
+          <div className="hidden lg:block rounded-2xl bg-surface-800/30 h-64 flex items-center justify-center align-middle content-center text-center">
             <span className="text-primary-300 text-lg">Home phone • Unlimited calling</span>
           </div>
         </div>

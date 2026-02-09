@@ -6,10 +6,8 @@ import FeatureBadges from './components/FeatureBadges'
 import ServicesGrid from './components/ServicesGrid'
 import FeatureBlocks from './components/FeatureBlocks'
 import DealCards from './components/DealCards'
-import TVStreamSection from './components/TVStreamSection'
 import HomePhoneSection from './components/HomePhoneSection'
 import BundleSection from './components/BundleSection'
-import BusinessSection from './components/BusinessSection'
 import FAQ from './components/FAQ'
 import CallbackForm from './components/CallbackForm'
 import Disclaimer from './components/Disclaimer'
@@ -33,12 +31,9 @@ export default function App() {
           <Hero />
           <FeatureBadges />
           <ServicesGrid />
-          <FeatureBlocks />
           <DealCards />
-          <TVStreamSection />
           <HomePhoneSection />
           <BundleSection />
-          <BusinessSection />
           <FAQ />
           <CallbackForm />
           <Disclaimer />

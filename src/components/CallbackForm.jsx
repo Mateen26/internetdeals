@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { PHONE_DISPLAY } from '../utils/constants'
 
-const CONSENT_TEXT = `I agree to be contacted as described below. Internet Cable TV Promo and/or authorized master-dealer partners may contact you at the number and/or email address provided, including by autodialer, prerecorded messages, and SMS. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to opt out.`
+const CONSENT_TEXT = `I agree to be contacted as described below. Internet Dealz and/or authorized master-dealer partners may contact you at the number and/or email address provided, including by autodialer, prerecorded messages, and SMS. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to opt out.`
 
 export default function CallbackForm() {
   const [submitted, setSubmitted] = useState(false)

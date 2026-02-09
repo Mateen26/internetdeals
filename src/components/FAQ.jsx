@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 const ITEMS = [
   {
     question: 'Who installs and bills me?',
-    answer: 'The provider you choose. Internet Cable TV Promo is an Independent Referral Partner. We do not install, bill, manage accounts, or provide technical support. All services are provided directly by the selected provider, subject to that provider\'s terms and policies.',
+    answer: 'The provider you choose. Internet Dealz is an Independent Referral Partner. We do not install, bill, manage accounts, or provide technical support. All services are provided directly by the selected provider, subject to that provider\'s terms and policies.',
   },
   {
     question: 'Are you the provider or affiliated with a specific brand?',
