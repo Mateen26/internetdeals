@@ -29,10 +29,7 @@ export default function Footer() {
                   {SUPPORT_EMAIL}
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-slate-300">
-                <MapPin className="h-4 w-4 shrink-0 mt-0.5" aria-hidden />
-                <span>{ADDRESS}</span>
-              </li>
+             
             </ul>
           </div>
           <div>
