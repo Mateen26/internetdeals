@@ -1,23 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import FeatureBadges from './components/FeatureBadges'
-import ServicesGrid from './components/ServicesGrid'
-import FeatureBlocks from './components/FeatureBlocks'
-import DealCards from './components/DealCards'
-import HomePhoneSection from './components/HomePhoneSection'
-import BundleSection from './components/BundleSection'
-import FAQ from './components/FAQ'
-import CallbackForm from './components/CallbackForm'
-import Disclaimer from './components/Disclaimer'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
+import TermsPage from './pages/TermsPage'
+import RefundPage from './pages/RefundPage'
+import PrivacyPage from './pages/PrivacyPage'
 import { SITE_NAME } from './utils/constants'
 
-const META_DESCRIPTION = 'Your destination for seamless connectivity and unmatched entertainment. High-speed internet and premium cable TV services. Bundle and save with Internet Cable TV Promo.'
+const META_DESCRIPTION = 'Your destination for seamless connectivity and unmatched entertainment. High-speed internet and premium cable TV services. Bundle and save with Internet Dealz.'
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Helmet>
         <title>{SITE_NAME} – High-Speed Internet & Cable TV</title>
         <meta name="description" content={META_DESCRIPTION} />
@@ -25,21 +19,14 @@ export default function App() {
         <meta property="og:description" content={META_DESCRIPTION} />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <main>
-          <Hero />
-          <FeatureBadges />
-          <ServicesGrid />
-          <DealCards />
-          <HomePhoneSection />
-          <BundleSection />
-          <FAQ />
-          <CallbackForm />
-          <Disclaimer />
-          <Footer />
-        </main>
-      </div>
-    </>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="terms" element={<TermsPage />} />
+          <Route path="refund" element={<RefundPage />} />
+          <Route path="privacy" element={<PrivacyPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }

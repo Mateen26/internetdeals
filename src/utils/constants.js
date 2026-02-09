@@ -7,18 +7,19 @@ export const SITE_NAME = 'Internet Dealz'
 export const SUPPORT_EMAIL = 'support@internetdealz.com'
 export const ADDRESS = '838 Broadway, New York, NY 10003, USA'
 
-// Nav items: { label, href (anchor) }
+// Nav items: { label, href } — use "/" for home, "/#section" for home sections
 export const NAV_ITEMS = [
-  { label: 'Home', href: '#hero' },
-  { label: 'Services', href: '#services' },
-  { label: 'Deals', href: '#deals' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Deals', href: '/#deals' },
+  { label: 'FAQ', href: '/#faq' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
-// Legal link anchors
+// Legal pages (routes) and disclaimer anchor
 export const LEGAL_LINKS = [
-  { label: 'Terms and conditions', href: '#terms' },
-  { label: 'Privacy policy', href: '#privacy' },
-  { label: 'Disclaimer', href: '#disclaimer' },
+  { label: 'Terms and conditions', path: '/terms' },
+  { label: 'Refund policy', path: '/refund' },
+  { label: 'Privacy policy', path: '/privacy' },
+  { label: 'Disclaimer', path: '/#disclaimer' },
 ]

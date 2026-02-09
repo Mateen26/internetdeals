@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { MapPin, Mail, Phone } from 'lucide-react'
 import { SITE_NAME, PHONE_DISPLAY, PHONE_TEL, SUPPORT_EMAIL, ADDRESS, LEGAL_LINKS } from '../utils/constants'
 
@@ -38,10 +39,16 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-400">Legal</h4>
             <ul className="mt-4 space-y-2">
               {LEGAL_LINKS.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href} className="text-slate-300 hover:text-accent-400 transition-colors">
-                    {link.label}
-                  </a>
+                <li key={link.path}>
+                  {link.path.startsWith('/#') ? (
+                    <a href={link.path} className="text-slate-300 hover:text-accent-400 transition-colors">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link to={link.path} className="text-slate-300 hover:text-accent-400 transition-colors">
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
